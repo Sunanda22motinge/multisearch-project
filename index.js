@@ -1,6 +1,3 @@
-// const geminiApi = AIzaSyCAF8_9Ti_EILTH1MSsjnNyIW6Fosal9K4;
-// const geminiAPI = AIzaSyCAF8_9Ti_EILTH1MSsjnNyIW6Fosal9K4;
-// const googleApi = AIzaSyCjaw0mzkbo4xgvESIiYmwzFcZaub8Lw3A;
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -72,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 //google API
     async function searchGoogle(query) {
-        const API_KEY = "AIzaSyCjaw0mzkbo4xgvESIiYmwzFcZaub8Lw3A"; //goole api key
-        const CX = "d47fcba4fc6824d2a"; // google cse id
+        const API_KEY = ""; //kindly use your goole api key i had removed it
+        const CX = ""; // use your google cse id
         const URL = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(query)}&key=${API_KEY}&cx=${CX}`;
 
         try {
@@ -112,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ✅ Fetch Gemini AI Response
     async function searchGeminiAI(query) {
-        const API_KEY = "AIzaSyCAF8_9Ti_EILTH1MSsjnNyIW6Fosal9K4"; // Replace with your Gemini API key
+        const API_KEY = ""; // Replace with your Gemini API key i had removed it
         const URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateText?key=${API_KEY}`;
 
         try {
