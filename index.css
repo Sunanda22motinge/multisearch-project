@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+#left{
+    width: 230px;
+    height: 100vh;
+    background-color:rgb(209, 230, 252);
+    position:fixed;
+}
+#icon{
+    margin:1.5rem 1.5rem;
+    cursor: pointer;
+}
+#newchat-btn{
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: rgb(231, 232, 233);
+    border-radius: 30px;
+    color: rgb(146, 145, 145);
+    cursor: pointer;
+    margin:1rem 1rem;
+}
+#plus{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+#recent{
+    width: 200px;
+    height: 250px;
+    margin-left: 1rem;
+    font-size: medium;
+    font: bold;
+}
+#recent-container{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    font-size: small;
+    cursor: pointer;
+
+}
+#recent-heading{
+    cursor:auto;
+}
+.recent-item{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#more-div{
+    margin: 2rem 1rem;
+    color: rgb(59, 59, 59);
+   
+}
+#help-div{
+    height: 40px;
+    width: 200px;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: small;
+}
+#help-div:hover{
+    background-color: rgb(231, 232, 233);
+}
+#activity-div{
+    height: 40px;
+    width: 200px;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: small;
+}
+#activity-div:hover{
+    background-color: rgb(231, 232, 233);
+}
+#settings-div{
+    height: 40px;
+    width: 200px;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: small;
+}
+#settings-div:hover{
+    background-color: rgb(231, 232, 233);
+}
+#right{
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-left: 15rem;
+}
+
+
+#heading{
+    height:50px;
+    text-align: center;
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+}
+#heading h2{
+    font-weight: 500;
+    font: bolder;
+    color: rgb(128, 126, 126);
+    font-size: 25px;
+}
+#animated-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+ #animated-text h1{
+    background-image: linear-gradient(to right, rgb(245, 69, 221) 0, rgb(118, 206, 247) 7ch, rgb(118, 206, 247) 0ch, rgb(129, 245, 174) 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+     font-weight: 600;
+     font-size:50px;
+}
+img{ 
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Cursor */
+.cursor{
+    position: relative;
+    margin: 2rem;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s  infinite normal both, 
+    blinkingCursor 500ms steps(50) infinite normal ;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(238, 13, 170, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+.just-line p{
+    height:100px; 
+    width:600px;
+    color:rgb(197, 196, 196);
+    font-size:40px;
+    font-weight: 600;
+    margin:1rem;
+}
+#cards-container{
+    width: 100%;
+    /* border:1px solid; */
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+#card{
+    height:200px;
+    width:200px;
+    border-radius: 8px;
+    background-color:rgb(209, 230, 252);
+    cursor: pointer;
+}
+
+#card:hover{
+    background-color: rgb(197, 194, 194);
+}
+
+#card .paragraph{
+    font-size: 13px;
+    margin:1rem;
+  
+}
+
+#card i{
+    margin-top: 5rem;
+    margin-left:10rem
+}
+
+#search{
+    width:60%;
+    height:45px;
+    /* border: 1px solid; */
+   border-radius: 6px;
+   background-color:rgb(209, 230, 252);
+margin: auto;
+margin-top:3rem;
+display: flex;
+justify-content: space-between;
+}
+
+#search input{
+    width:200px;
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left: 0.9rem;
+}
+
+#icons-div i{
+    margin-right:0.9rem;
+    margin-top: 0.9rem;
+    cursor: pointer;
+}
+
+#buttons{
+    margin: auto;
+    margin-top:2rem;
+    width:60%;
+    height: 40px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#buttons .choose-btn{
+    width:100px;
+    height:35px;
+   border-radius: 6px;
+   border: none;
+   cursor: pointer;
+   box-shadow: 3px 3px 3px #888888; 
+}
+
+.choose-btn:hover{
+    background-color:rgb(202, 199, 199);
+    zoom:1.1; 
+}
+#search-container{
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:100%;
+    background-color: rgb(238, 248, 248);
+}
+
+@media  screen and (max-width : 992px) {
+    body{
+        display:flex;
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+    }
+    #left{
+        /* width: 0; */
+        display: none;
+      }
+      #right{
+        margin-left: auto;
+      }
+      #search{
+        width:90%;
+        margin: auto;
+        margin-top: 2rem;
+      }
+    #card{
+        width: 400px;
+        height:200px;
+        display: block;
+    }
+    
+}
+@media screen and (max-width : 784px){
+    #animated-text h1{
+        background-image: linear-gradient(to right, rgb(245, 69, 221) 0, rgb(118, 206, 247) 7ch, rgb(118, 206, 247) 0ch, rgb(129, 245, 174) 100%);
+        -webkit-background-clip:text;
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+         font-weight: 600;
+         font-size:40px;
+    }
+    .just-line {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* #card{
+        width: 350px;
+        display: block;
+       margin: auto;
+    } */
+    #buttons {
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
+     }
+     
+     #buttons .choose-btn{
+         width:100px;
+         height:35px;
+     }
+}
+
+@media screen and (max-width:441px) {
+    #animated-text h1{
+        background-image: linear-gradient(to right, rgb(245, 69, 221) 0, rgb(118, 206, 247) 7ch, rgb(118, 206, 247) 0ch, rgb(129, 245, 174) 100%);
+        -webkit-background-clip:text;
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+         font-weight: 600;
+         font-size:25px;
+    }
+    .cursor{
+        position: relative;
+        margin: 2rem;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    #search{
+        width:80%;
+        display:flex;
+        margin: auto;
+         margin-top:1rem; 
+        /* margin-left: 1rem; */ 
+        flex-wrap:wrap;
+    }
+   #icons-div{
+    display: none;
+   }
+
+   #cards-container{
+    width:100%;
+    margin-top: 2rem;
+    margin: auto;
+    /* padding-left: 2rem; */
+   }
+   #card{
+    width: 300px;
+    display: block;
+   margin:auto ;
+}
+#buttons {
+   width:100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#buttons .choose-btn{
+    width:100px;
+    height:35px;
+}
+
+}
